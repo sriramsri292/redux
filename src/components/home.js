@@ -1,5 +1,5 @@
 import React from "react";
-import { useCart } from "./CartContextProvider";
+import { useCart } from "./provider";
 
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -20,6 +20,7 @@ export default function Home() {
     console.log("Updated addCart:", [...addCart, productWithQuantity]);
   };
   
+
   
   return (
     <div className="f">

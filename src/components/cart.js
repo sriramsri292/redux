@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useCart } from "./CartContextProvider";
+import { useCart } from "./provider";
 
 export default function Cart() {
-  const { addCart = [], handleQuantity, setAddCart } = useCart();
+  const { addCart = [], setAddCart } = useCart();
   const [totalAmount, setTotalAmount] = useState(0);
 
   useEffect(() => {
@@ -40,6 +40,7 @@ export default function Cart() {
       </div>
     );
   }
+
 
   return (
     <div className="bbbb">
